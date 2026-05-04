@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
 
-function Login() {
+function Register() {
     return (
         <div className="auth-page">
             <div className="auth-card">
-                <h1>Login</h1>
-                <p className="auth-subtitle">Welcome back! Please log in to continue.</p>
+                <h1>Register</h1>
+                <p className="auth-subtitle">Create an account to use the application.</p>
 
                 <form>
+                    <div className="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Enter your name" />
+                    </div>
+
                     <div className="form-group">
                         <label>Email</label>
                         <input type="email" placeholder="Enter your email" />
@@ -15,18 +20,18 @@ function Login() {
 
                     <div className="form-group">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password" />
+                        <input type="password" placeholder="Create a password" />
                     </div>
 
-                    <button type="submit">Login</button>
+                    <button type="submit">Register</button>
                 </form>
 
                 <p className="auth-link">
-                    Don't have an account? <Link to="/register">Register here</Link>
+                    Already have an account? <Link to="/login">Login here</Link>
                 </p>
             </div>
         </div>
     );
 }
 
-export default Login;
+export default Register;
