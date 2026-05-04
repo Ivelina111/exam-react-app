@@ -146,3 +146,30 @@ button:hover {
   margin: 0 16px 20px;
   color: #555;
 }
+
+.success-message {
+  color: #1abc9c;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.success-box {
+  text-align: center;
+  padding: 35px 20px;
+  background: #f4fffb;
+  border: 1px solid #1abc9c;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.success-box h2 {
+  color: #1abc9c;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.success-box p {
+  font-size: 18px;
+  color: #2c3e50;
+}
