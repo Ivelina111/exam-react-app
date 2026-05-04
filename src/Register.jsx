@@ -5,7 +5,7 @@ function Register() {
         <div className="auth-page">
             <div className="auth-card">
                 <h1>Register</h1>
-                <p className="auth-subtitle">Create an account to use the application.</p>
+                <p className="auth-subtitle">Create an account to save and create your own recipes.</p>
 
                 <form>
                     <div className="form-group">

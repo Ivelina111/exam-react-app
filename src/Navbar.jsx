@@ -5,8 +5,10 @@ function Navbar() {
         <nav>
             <NavLink to="/" end>Home</NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/recipes">Recipes</NavLink>
             <NavLink to="/login">Login</NavLink>
             <NavLink to="/register">Register</NavLink>
+
         </nav>
     );
 }
