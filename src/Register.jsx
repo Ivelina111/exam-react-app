@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isRegistered, setIsRegistered] = useState(false);
+    const navigate = useNavigate();
 
     function handleRegister(event) {
         event.preventDefault();
@@ -31,6 +33,9 @@ function Register() {
                     <div className="success-box">
                         <h2>Registration successful!</h2>
                         <p>Welcome, {name}! You can now save and create your own recipes.</p>
+                        <button onClick={() => navigate("/recipes")}>
+                            Go to Recipes
+                        </button>
                     </div>
                 ) : (
                     <>
