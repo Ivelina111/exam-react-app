@@ -1,0 +1,41 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Pasta Carbonara",
+            "description": "A simple Italian pasta recipe with eggs, cheese and bacon.",
+            "image": "https://images.unsplash.com/photo-1608756687911-aa1599ab3bd9"
+        },
+        {
+            "id": 2,
+            "title": "Pancakes",
+            "description": "Soft homemade pancakes, perfect for breakfast.",
+            "image": "https://images.unsplash.com/photo-1528207776546-365bb710ee93"
+        },
+        {
+            "id": 3,
+            "title": "Greek Salad",
+            "description": "Fresh salad with tomatoes, cucumber, olives and feta cheese.",
+            "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999"
+        },
+        {
+            "id": 4,
+            "title": "Lasagna",
+            "description": "Classic Italian lasagna with layers of pasta, meat sauce and cheese.",
+            "image": "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/1391_4k.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Chocolate Cake",
+            "description": "Rich and moist chocolate cake with chocolate frosting.",
+            "image": "https://sugarspunrun.com/wp-content/uploads/2024/01/Chocolate-cake-recipe-1-of-1-copy.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Caesar Salad",
+            "description": "Crisp romaine lettuce with Caesar dressing, croutons and Parmesan cheese.",
+            "image": "https://gabrovo.pizzatempo.bg/wp-content/uploads/2018/10/cezarspile.jpg"
+        }
+    ],
+    "users": []
+}
