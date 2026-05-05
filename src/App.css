@@ -79,11 +79,12 @@ button:hover {
 }
 
 .auth-page {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 50px;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .auth-card {
