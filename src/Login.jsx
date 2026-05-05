@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -10,20 +10,25 @@ function Login() {
     const [loggedUserName, setLoggedUserName] = useState("");
     const navigate = useNavigate();
 
-    function handleLogin(event) {
+    async function handleLogin(event) {
         event.preventDefault();
 
-        const savedUser = JSON.parse(localStorage.getItem("user"));
+        const response = await fetch("http://localhost:3001/users");
+        const users = await response.json();
 
-        if (
-            savedUser &&
-            savedUser.email === email &&
-            savedUser.password === password
-        ) {
+        const loggedUser = users.find(
+            (user) =>
+                user.email === email.trim() &&
+                user.password === password.trim()
+        );
+
+        if (loggedUser) {
             localStorage.setItem("isLoggedIn", "true");
+            localStorage.setItem("currentUser", JSON.stringify(loggedUser));
             window.dispatchEvent(new Event("storage"));
+
             setMessage("");
-            setLoggedUserName(savedUser.name);
+            setLoggedUserName(loggedUser.name);
             setIsLoggedIn(true);
         } else {
             setMessage("Invalid email or password.");

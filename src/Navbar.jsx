@@ -8,13 +8,13 @@ function Navbar() {
     );
 
     const [user, setUser] = useState(
-        JSON.parse(localStorage.getItem("user"))
+        JSON.parse(localStorage.getItem("currentUser"))
     );
 
     useEffect(() => {
         function updateNavbar() {
             setIsLoggedIn(localStorage.getItem("isLoggedIn") === "true");
-            setUser(JSON.parse(localStorage.getItem("user")));
+            setUser(JSON.parse(localStorage.getItem("currentUser")));
         }
 
         window.addEventListener("storage", updateNavbar);
@@ -26,6 +26,7 @@ function Navbar() {
 
     function handleLogout() {
         localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("currentUser");
 
         setIsLoggedIn(false);
         setUser(null);

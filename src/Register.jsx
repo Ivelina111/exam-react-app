@@ -8,9 +8,18 @@ function Register() {
     const [password, setPassword] = useState("");
     const [isRegistered, setIsRegistered] = useState(false);
     const navigate = useNavigate();
+    const [error, setError] = useState("");
 
-    function handleRegister(event) {
+    async function handleRegister(event) {
         event.preventDefault();
+
+        const checkResponse = await fetch(`http://localhost:3001/users?email=${email}`);
+        const existingUsers = await checkResponse.json();
+
+        if (existingUsers.length > 0) {
+            setError("User with this email already exists.");
+            return;
+        }
 
         const user = {
             name: name,
@@ -18,11 +27,22 @@ function Register() {
             password: password
         };
 
-        localStorage.setItem("user", JSON.stringify(user));
+        const response = await fetch("http://localhost:3001/users", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(user)
+        });
+
+        const createdUser = await response.json();
+
         localStorage.setItem("isLoggedIn", "true");
+        localStorage.setItem("currentUser", JSON.stringify(createdUser));
         window.dispatchEvent(new Event("storage"));
 
         setIsRegistered(true);
+        setError("");
     }
 
     return (
@@ -79,6 +99,7 @@ function Register() {
                             </div>
 
                             <button type="submit">Register</button>
+                            {error && <p className="error-message">{error}</p>}
 
                         </form>
                     </>
