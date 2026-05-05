@@ -20,6 +20,7 @@ function Register() {
 
         localStorage.setItem("user", JSON.stringify(user));
         localStorage.setItem("isLoggedIn", "true");
+        window.dispatchEvent(new Event("storage"));
 
         setIsRegistered(true);
     }

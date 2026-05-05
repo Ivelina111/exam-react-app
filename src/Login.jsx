@@ -21,6 +21,7 @@ function Login() {
             savedUser.password === password
         ) {
             localStorage.setItem("isLoggedIn", "true");
+            window.dispatchEvent(new Event("storage"));
             setMessage("");
             setLoggedUserName(savedUser.name);
             setIsLoggedIn(true);
