@@ -4,15 +4,7 @@ import Navbar from "./Navbar";
 import Login from "./Login";
 import Register from "./Register";
 import Recipes from "./Recipes";
-
-function Home() {
-  return (
-    <div className="page">
-      <h1>Home Page</h1>
-      <p>Welcome!</p>
-    </div>
-  );
-}
+import Home from "./Home";
 
 function About() {
   return (

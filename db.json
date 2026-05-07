@@ -79,6 +79,12 @@
       "email": "ive5@mail.com",
       "password": "123456",
       "id": "XY8BMUA3duE"
+    },
+    {
+      "name": "dsadfa",
+      "email": "ive6@mail.com",
+      "password": "123456",
+      "id": "dbjQ4l0qBDI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
