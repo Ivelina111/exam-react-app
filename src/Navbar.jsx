@@ -40,7 +40,12 @@ function Navbar() {
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/recipes">Recipes</NavLink>
+
+                {isLoggedIn && (
+                    <NavLink to="/my-recipes">My Recipes</NavLink>
+                )}
             </div>
+
             <div className="nav-right">
                 {isLoggedIn ? (
                     <>
@@ -49,6 +54,7 @@ function Navbar() {
                             Logout
                         </button>
                     </>
+
                 ) : (
                     <>
                         <NavLink to="/login">Login</NavLink>
@@ -62,3 +68,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
