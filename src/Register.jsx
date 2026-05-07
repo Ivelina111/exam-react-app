@@ -38,7 +38,13 @@ function Register() {
         const createdUser = await response.json();
 
         localStorage.setItem("isLoggedIn", "true");
-        localStorage.setItem("currentUser", JSON.stringify(createdUser));
+        const safeUser = {
+            id: createdUser.id,
+            name: createdUser.name,
+            email: createdUser.email
+        };
+
+        localStorage.setItem("currentUser", JSON.stringify(safeUser));
         window.dispatchEvent(new Event("storage"));
 
         setIsRegistered(true);

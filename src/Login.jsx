@@ -24,7 +24,13 @@ function Login() {
 
         if (loggedUser) {
             localStorage.setItem("isLoggedIn", "true");
-            localStorage.setItem("currentUser", JSON.stringify(loggedUser));
+            const safeUser = {
+                id: loggedUser.id,
+                name: loggedUser.name,
+                email: loggedUser.email
+            };
+
+            localStorage.setItem("currentUser", JSON.stringify(safeUser));
             window.dispatchEvent(new Event("storage"));
 
             setMessage("");
