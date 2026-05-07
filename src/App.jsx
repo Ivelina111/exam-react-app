@@ -7,6 +7,7 @@ import Recipes from "./Recipes";
 import Home from "./Home";
 import About from "./About";
 import MyRecipes from "./MyRecipes";
+import AddRecipe from "./AddRecipe";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/my-recipes" element={<MyRecipes />} />
+        <Route path="/add-recipe" element={<AddRecipe />} />
       </Routes>
     </div>
   );

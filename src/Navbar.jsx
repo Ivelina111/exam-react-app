@@ -42,7 +42,10 @@ function Navbar() {
                 <NavLink to="/recipes">Recipes</NavLink>
 
                 {isLoggedIn && (
-                    <NavLink to="/my-recipes">My Recipes</NavLink>
+                    <>
+                        <NavLink to="/my-recipes">My Recipes</NavLink>
+                        <NavLink to="/add-recipe">Add Recipe</NavLink>
+                    </>
                 )}
             </div>
 

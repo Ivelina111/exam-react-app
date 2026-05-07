@@ -7,7 +7,13 @@ function Recipes() {
     useEffect(() => {
         fetch("http://localhost:3001/recipes")
             .then((response) => response.json())
-            .then((data) => setRecipes(data))
+            .then((data) => {
+                const publicRecipes = data.filter(
+                    (recipe) => !recipe.userId
+                );
+
+                setRecipes(publicRecipes);
+            })
             .catch((error) => console.log(error));
     }, []);
 

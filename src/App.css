@@ -333,3 +333,27 @@ button:hover {
   color: #555;
   line-height: 1.7;
 }
+
+textarea {
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  resize: vertical;
+}
+
+.recipe-card button {
+  margin: 0 16px 20px;
+  padding: 8px 14px;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.recipe-card button:hover {
+  background-color: #c0392b;
+}
