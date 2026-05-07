@@ -272,3 +272,63 @@ button:hover {
 .home-section button:hover {
   background-color: #16a085;
 }
+
+.about-page {
+  max-width: 1000px;
+}
+
+.about-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.about-intro {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.about-card {
+  background: #f4fffb;
+  border: 1px solid #1abc9c;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+}
+
+.about-card h2 {
+  color: #1abc9c;
+  margin-bottom: 12px;
+}
+
+.about-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-section {
+  background: #f4f6f8;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.7;
+}

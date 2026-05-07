@@ -5,15 +5,9 @@ import Login from "./Login";
 import Register from "./Register";
 import Recipes from "./Recipes";
 import Home from "./Home";
+import About from "./About";
 
-function About() {
-  return (
-    <div className="page">
-      <h1>About Page</h1>
-      <p>This application is in progress.</p>
-    </div>
-  );
-}
+
 
 function App() {
   return (
