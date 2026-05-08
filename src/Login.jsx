@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
@@ -9,6 +9,11 @@ function Login() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [loggedUserName, setLoggedUserName] = useState("");
     const navigate = useNavigate();
+
+    useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food6.png')";
+    }, []);
 
     async function handleLogin(event) {
         event.preventDefault();

@@ -6,6 +6,11 @@ function Recipes() {
     const [selectedRecipe, setSelectedRecipe] = useState(null);
 
     useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food3.png')";
+    }, []);
+
+    useEffect(() => {
         fetch("http://localhost:3001/recipes")
             .then((response) => response.json())
             .then((data) => {
@@ -44,7 +49,7 @@ function Recipes() {
                             className="close-btn"
                             onClick={() => setSelectedRecipe(null)}
                         >
-                            X
+                            x
                         </button>
 
                         <img src={selectedRecipe.image} alt={selectedRecipe.title} />

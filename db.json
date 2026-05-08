@@ -274,6 +274,12 @@
       "email": "ive88@mail.com",
       "password": "123456",
       "id": "yhDiUeRiKR8"
+    },
+    {
+      "name": "ive9",
+      "email": "ive9@mail.com",
+      "password": "123456",
+      "id": "msPBM-kN1Nc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

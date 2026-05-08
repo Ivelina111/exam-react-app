@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function AddRecipe() {
@@ -11,6 +11,11 @@ function AddRecipe() {
 
     const navigate = useNavigate();
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+    useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food5.png')";
+    }, []);
 
     async function handleAddRecipe(event) {
         event.preventDefault();

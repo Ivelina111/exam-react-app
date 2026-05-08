@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 function About() {
+
+    useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food2.png')";
+    }, []);
+
     return (
         <div className="page about-page">
             <h1>About Fork Around & Find Out</h1>

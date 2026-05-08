@@ -9,6 +9,11 @@ function MyRecipes() {
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
     useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food4.png')";
+    }, []);
+
+    useEffect(() => {
         fetch("http://localhost:3001/recipes")
             .then((response) => response.json())
             .then((data) => {

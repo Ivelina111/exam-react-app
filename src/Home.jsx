@@ -6,9 +6,14 @@ function Home() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food1.png')";
+    }, []);
+
+    useEffect(() => {
         fetch("http://localhost:3001/recipes")
             .then((response) => response.json())
-            .then((data) => setRecipes(data.slice(0, 3)))
+            .then((data) => setRecipes(data.slice(0, 4)))
             .catch((error) => console.log(error));
     }, []);
 

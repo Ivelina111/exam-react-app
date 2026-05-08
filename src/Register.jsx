@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -9,6 +9,11 @@ function Register() {
     const [isRegistered, setIsRegistered] = useState(false);
     const navigate = useNavigate();
     const [error, setError] = useState("");
+
+    useEffect(() => {
+        document.body.style.backgroundImage =
+            "url('/src/assets/food7.png')";
+    }, []);
 
     async function handleRegister(event) {
         event.preventDefault();
