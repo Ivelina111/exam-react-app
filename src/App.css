@@ -387,14 +387,14 @@ textarea {
   background: white;
   width: 100%;
   max-width: 650px;
-  max-height: 85vh;
   overflow-y: auto;
   overflow-x: hidden;
-  border-radius: 14px;
-  padding: 25px;
+  border-radius: 18px;
+  padding: 26px;
   position: relative;
   box-sizing: border-box;
-  padding-top: 45px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  max-height: 90vh;
 }
 
 .modal-content img {
@@ -402,8 +402,90 @@ textarea {
   height: 260px;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 7px;
+  margin-top: 30px;
   display: block;
+}
+
+.edit-btn {
+  background: #2f4356;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.edit-btn:hover {
+  background: #1f2f3f;
+}
+
+.modal-content form {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-content .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.modal-content label {
+  font-weight: 700;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.modal-content textarea {
+  min-height: 95px;
+  resize: vertical;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.edit-actions button {
+  border: none;
+  padding: 11px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.edit-actions button:nth-child(1) {
+  background: #2f4356;
+}
+
+.edit-actions button:nth-child(2) {
+  background: #c0392b;
+}
+
+.edit-actions button:nth-child(3) {
+  background: #2e8b57;
+}
+
+.edit-actions button:hover {
+  opacity: 0.9;
 }
 
 .close-btn {

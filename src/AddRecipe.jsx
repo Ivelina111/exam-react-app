@@ -11,18 +11,20 @@ function AddRecipe() {
 
     const navigate = useNavigate();
     const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
 
     async function handleAddRecipe(event) {
         event.preventDefault();
 
         const newRecipe = {
-            title: title,
-            description: description,
-            image: image,
-            ingredients: ingredients.split("\n").filter((item) => item.trim() !== ""),
-            instructions: instructions,
-            cookTime: cookTime,
+            title: title.trim(),
+            description: description.trim(),
+            image: image.trim(),
+            ingredients: ingredients
+                .split("\n")
+                .map((item) => item.trim())
+                .filter((item) => item !== ""),
+            instructions: instructions.trim(),
+            cookTime: cookTime.trim(),
             userId: currentUser.id
         };
 
