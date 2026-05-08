@@ -4,37 +4,182 @@
       "id": "1",
       "title": "Pasta Carbonara",
       "description": "A simple Italian pasta recipe with eggs, cheese and bacon.",
-      "image": "https://foodbydrygast.com/assets/images/recipes/pasta_carbonara4x3a1280w960h.webp"
+      "image": "https://foodbydrygast.com/assets/images/recipes/pasta_carbonara4x3a1280w960h.webp",
+      "cookTime": "25 minutes",
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Parmesan cheese",
+        "Bacon",
+        "Black pepper"
+      ],
+      "instructions": "Cook the pasta until al dente. Fry the bacon until crispy. Mix eggs and Parmesan in a bowl. Combine everything together while the pasta is still hot and season with black pepper."
     },
     {
       "id": "2",
       "title": "Pancakes",
       "description": "Soft homemade pancakes, perfect for breakfast.",
-      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/09/protein-pancakes.jpg"
+      "image": "https://cdn.loveandlemons.com/wp-content/uploads/2025/09/protein-pancakes.jpg",
+      "cookTime": "20 minutes",
+      "ingredients": [
+        "Flour",
+        "Milk",
+        "Eggs",
+        "Sugar",
+        "Butter"
+      ],
+      "instructions": "Mix all ingredients into a smooth batter. Heat a pan with a little butter and cook the pancakes until golden on both sides."
     },
     {
       "id": "3",
       "title": "Greek Salad",
       "description": "Fresh salad with tomatoes, cucumber, olives and feta cheese.",
-      "image": "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg"
+      "image": "https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg",
+      "cookTime": "10 minutes",
+      "ingredients": [
+        "Tomatoes",
+        "Cucumber",
+        "Feta cheese",
+        "Olives",
+        "Olive oil",
+        "Onions"
+      ],
+      "instructions": "Chop all vegetables into bite-sized pieces. Add olives and feta cheese, then drizzle with olive oil and mix gently."
     },
     {
       "id": "4",
       "title": "Lasagna",
       "description": "Classic Italian lasagna with layers of pasta, meat sauce and cheese.",
-      "image": "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/1391_4k.jpg"
+      "image": "https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/1391_4k.jpg",
+      "cookTime": "1 hour 20 minutes",
+      "ingredients": [
+        "Lasagna sheets",
+        "Ground beef",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Parmesan cheese"
+      ],
+      "instructions": "Prepare the meat sauce and layer it with lasagna sheets and cheese. Bake in the oven until golden and bubbling."
     },
     {
       "id": "5",
       "title": "Chocolate Cake",
       "description": "Rich and moist chocolate cake with chocolate frosting.",
-      "image": "https://sugarspunrun.com/wp-content/uploads/2024/01/Chocolate-cake-recipe-1-of-1-copy.jpg"
+      "image": "https://sugarspunrun.com/wp-content/uploads/2024/01/Chocolate-cake-recipe-1-of-1-copy.jpg",
+      "cookTime": "1 hour",
+      "ingredients": [
+        "Flour",
+        "Cocoa powder",
+        "Eggs",
+        "Sugar",
+        "Chocolate frosting"
+      ],
+      "instructions": "Prepare the cake batter and bake until fully cooked. Let it cool before covering it with chocolate frosting."
     },
     {
       "id": "6",
       "title": "Caesar Salad",
       "description": "Crisp romaine lettuce with Caesar dressing, chicken, croutons and Parmesan cheese.",
-      "image": "https://gabrovo.pizzatempo.bg/wp-content/uploads/2018/10/cezarspile.jpg"
+      "image": "https://gabrovo.pizzatempo.bg/wp-content/uploads/2018/10/cezarspile.jpg",
+      "cookTime": "20 minutes",
+      "ingredients": [
+        "Romaine lettuce",
+        "Chicken breast",
+        "Croutons",
+        "Parmesan cheese",
+        "Caesar dressing"
+      ],
+      "instructions": "Cook and slice the chicken. Toss the lettuce with Caesar dressing, then top with chicken, croutons and Parmesan cheese."
+    },
+    {
+      "id": "7",
+      "title": "Chicken Alfredo",
+      "description": "Creamy pasta with grilled chicken and Parmesan Alfredo sauce.",
+      "image": "https://www.allrecipes.com/thmb/ziUOvj4f_me5yvZhYCUy0n4IKbQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/276725-creamy-chicken-alfredo-VAT-001-Beauty-4x3-c4b026db5cb349f4b8fd627c56f91a42.jpg",
+      "cookTime": "35 minutes",
+      "ingredients": [
+        "Fettuccine pasta",
+        "Chicken breast",
+        "Heavy cream",
+        "Parmesan cheese",
+        "Garlic"
+      ],
+      "instructions": "Cook the pasta and grill the chicken. Prepare the Alfredo sauce with cream, garlic and Parmesan cheese. Combine everything together and serve warm."
+    },
+    {
+      "id": "8",
+      "title": "Margherita Pizza",
+      "description": "Classic pizza with tomato sauce, mozzarella and fresh basil.",
+      "image": "https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg",
+      "cookTime": "40 minutes",
+      "ingredients": [
+        "Pizza dough",
+        "Tomato sauce",
+        "Mozzarella cheese",
+        "Fresh basil",
+        "Olive oil"
+      ],
+      "instructions": "Spread tomato sauce over the dough and add mozzarella cheese. Bake until golden, then top with fresh basil and olive oil."
+    },
+    {
+      "id": "9",
+      "title": "Berry Smoothie Bowl",
+      "description": "Refreshing smoothie bowl with berries, banana and crunchy toppings.",
+      "image": "https://beginwithbalance.com/wp-content/uploads/2023/03/Protein-Berry-Smoothie-Bowl-1.jpg",
+      "cookTime": "10 minutes",
+      "ingredients": [
+        "Frozen berries",
+        "Banana",
+        "Greek yogurt",
+        "Granola",
+        "Honey"
+      ],
+      "instructions": "Blend the berries, banana and yogurt until smooth. Pour into a bowl and top with granola, fresh fruit and honey."
+    },
+    {
+      "id": "10",
+      "title": "Beef Tacos",
+      "description": "Mexican-style tacos filled with seasoned beef, vegetables and cheese.",
+      "image": "https://loveandgoodstuff.com/wp-content/uploads/2020/08/classic-ground-beef-tacos-1200x1200.jpg",
+      "cookTime": "30 minutes",
+      "ingredients": [
+        "Taco shells",
+        "Ground beef",
+        "Lettuce",
+        "Cheddar cheese",
+        "Tomatoes"
+      ],
+      "instructions": "Cook the ground beef with taco seasoning. Fill the taco shells with beef, lettuce, tomatoes and cheese before serving."
+    },
+    {
+      "id": "11",
+      "title": "Sushi Rolls",
+      "description": "Fresh homemade sushi rolls with rice, salmon and avocado.",
+      "image": "https://www.tiger-corporation.com/wp-content/uploads/2023/02/hero-img-recipe-salmon-roll-22a44bc8993e779162aa80766bda8751.jpg",
+      "cookTime": "50 minutes",
+      "ingredients": [
+        "Sushi rice",
+        "Nori sheets",
+        "Salmon",
+        "Avocado",
+        "Cucumber"
+      ],
+      "instructions": "Prepare the sushi rice and spread it over the nori sheets. Add the fillings and roll tightly before slicing into pieces."
+    },
+    {
+      "id": "12",
+      "title": "Cheeseburger",
+      "description": "Juicy homemade cheeseburger with crispy fries.",
+      "image": "https://www.sargento.com/assets/Uploads/Recipe/Image/cheddarbaconcheeseburger__FocusFillWyIwLjAwIiwiMC4wMCIsODAwLDQ3OF0_CompressedW10.jpg",
+      "cookTime": "25 minutes",
+      "ingredients": [
+        "Burger buns",
+        "Ground beef",
+        "Cheddar cheese",
+        "Lettuce",
+        "Tomato"
+      ],
+      "instructions": "Shape and cook the beef patties until browned. Add cheese on top, then assemble the burgers with fresh vegetables and buns."
     },
     {
       "title": "pizza",
