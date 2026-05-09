@@ -12,7 +12,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #2c3e50;
+  background-color: #55a755;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   font-family: cursive;
 }
 
@@ -40,22 +43,29 @@ nav a {
 }
 
 nav a:hover {
-  color: #1abc9c
+  color: #ebcf8e;
+  transform: translateY(-2px);
 }
 
 nav a.active {
-  color: #1abc9c;
-  border-bottom: 2px solid #1abc9c;
+  color: #ff8b00;
+  border-bottom: 2px solid #ff8b00;
   padding-bottom: 4px;
 }
 
 .page {
   max-width: 1200px;
   margin: 40px auto;
-  background: white;
+  background: rgba(242, 231, 215, 0.88);
   padding: 24px 32px 32px;
   border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.page h1,
+.page p {
+  color: #555;
 }
 
 form {
@@ -74,8 +84,8 @@ input {
 button {
   padding: 10px;
   border: none;
-  background: #2c3e50;
-  color: white;
+  background: #55a755;
+  color: #ebcf8e;
   border-radius: 6px;
   cursor: pointer;
   font-family: cursive;
@@ -84,7 +94,8 @@ button {
 }
 
 button:hover {
-  background: #1abc9c;
+  background: #339b23;
+  transform: translateY(-2px);
 }
 
 .auth-page {
@@ -100,7 +111,7 @@ button:hover {
   width: 100%;
   max-width: 600px;
   margin: 10px auto;
-  background: white;
+  background: rgba(242, 231, 215, 0.88);
   padding: 35px;
   border-radius: 14px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
@@ -112,10 +123,11 @@ button:hover {
 .auth-card h1 {
   margin-bottom: 8px;
   text-align: center;
+  color: #555;
 }
 
 .auth-subtitle {
-  color: #666;
+  color: #555;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -123,6 +135,7 @@ button:hover {
 .form-group {
   display: flex;
   flex-direction: column;
+  color: #555;
 }
 
 .form-group input {
@@ -142,15 +155,16 @@ button:hover {
 .auth-link {
   text-align: center;
   margin-top: 20px;
+  color: #555;
 }
 
 .auth-link a {
-  color: #2c3e50;
+  color: #555;
   font-weight: bold;
 }
 
 .auth-link a:hover {
-  color: #1abc9c;
+  color: #55a755;
 }
 
 .recipes-grid {
@@ -161,7 +175,7 @@ button:hover {
 }
 
 .recipe-card {
-  background: #f5d78c;
+  background: #ebcf8e;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
@@ -169,6 +183,7 @@ button:hover {
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
+  font-family: cursive;
 }
 
 .recipe-card p:last-child {
@@ -183,6 +198,7 @@ button:hover {
 
 .recipe-card h2 {
   margin: 16px;
+  color: #555;
 }
 
 .recipe-card p {
@@ -200,21 +216,21 @@ button:hover {
 .success-box {
   text-align: center;
   padding: 35px 20px;
-  background: #f4fffb;
-  border: 1px solid #1abc9c;
+  background: #d8efc6;
+  border: 1px solid #55a755;
   border-radius: 12px;
   margin-top: 25px;
 }
 
 .success-box h2 {
-  color: #1abc9c;
+  color: #55a755;
   margin-bottom: 10px;
   font-size: 26px;
 }
 
 .success-box p {
   font-size: 18px;
-  color: #2c3e50;
+  color: #555;
 }
 
 .error-message {
@@ -227,8 +243,8 @@ button:hover {
 .success-box button {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #1abc9c;
-  color: white;
+  background-color: #55a755;
+  color: #ebcf8e;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -237,21 +253,21 @@ button:hover {
 }
 
 .success-box button:hover {
-  background-color: #16a085;
+  background-color: #339b23;
 }
 
 .user-name {
   margin-right: 15px;
-  color: white;
+  color: #ebcf8e;
   font-weight: bold;
   font-size: 20px;
   font-family: cursive;
 }
 
 .logout-btn {
-  background: #1abc9c;
-  border: 1px solid white;
-  color: white;
+  background: #ff8b00;
+  border: 1px solid #ebcf8e;
+  color: #ebcf8e;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -261,7 +277,7 @@ button:hover {
 }
 
 .logout-btn:hover {
-  background: white;
+  background: #e9c400;
   color: #2c3e50;
 }
 
@@ -274,13 +290,14 @@ button:hover {
 .home-section h1 {
   font-size: 35px;
   margin: 40px 0 10px;
+  color: #555;
 }
 
 .home-section h2 {
   font-size: 45px;
   font-style: italic;
   margin: 0 0 18px;
-  color: #ed8e1a;
+  color: #ff8b00;
 }
 
 .home-section p {
@@ -292,8 +309,8 @@ button:hover {
 
 .home-section button {
   padding: 24px 48px;
-  background-color: #1abc9c;
-  color: white;
+  background-color: #55a755;
+  color: #ebcf8e;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -304,7 +321,7 @@ button:hover {
 }
 
 .home-section button:hover {
-  background-color: #16a085;
+  background-color: #339b23;
 }
 
 .about-page {
@@ -314,6 +331,13 @@ button:hover {
 .about-page h1 {
   text-align: center;
   margin-bottom: 25px;
+  color: #555;
+}
+
+.about-page h1 span {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ff8b00;
 }
 
 .about-intro {
@@ -334,8 +358,8 @@ button:hover {
 }
 
 .about-card {
-  background: #f4fffb;
-  border: 1px solid #1abc9c;
+  background: #eed8a5;
+  border: 1px solid #ff8b00;
   border-radius: 12px;
   padding: 25px;
   text-align: center;
@@ -343,7 +367,8 @@ button:hover {
 }
 
 .about-card h2 {
-  color: #1abc9c;
+  color: #ff8b00;
+  ;
   margin-bottom: 12px;
 }
 
@@ -353,7 +378,8 @@ button:hover {
 }
 
 .about-section {
-  background: #f4f6f8;
+  background: #d8efc6;
+  border: 1px solid #55a755;
   border-radius: 12px;
   padding: 30px;
   text-align: center;
@@ -361,7 +387,7 @@ button:hover {
 }
 
 .about-section h2 {
-  color: #2c3e50;
+  color: #55a755;
   margin-bottom: 12px;
 }
 
@@ -384,21 +410,11 @@ textarea {
   margin: 0 16px 20px;
   padding: 8px 14px;
   border: none;
-  background-color: #e74c3c;
-  color: white;
+  background-color: #b85747;
+  color: #ebcf8e;
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-}
-
-.recipe-card button:hover {
-  background-color: #c0392b;
-}
-
-.recipe-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
-  font-family: cursive;
 }
 
 .recipe-card:hover {
@@ -408,35 +424,44 @@ textarea {
 
 .modal-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
-  padding: 30px;
+  z-index: 999;
+  padding: 20px;
   box-sizing: border-box;
 }
 
 .modal-content {
-  background: white;
+  background: rgb(247 228 206 / 96%);
   width: 100%;
   max-width: 650px;
+  max-height: calc(100vh - 40px);
   overflow-y: auto;
   overflow-x: hidden;
   border-radius: 18px;
   padding: 26px;
   position: relative;
   box-sizing: border-box;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
-  max-height: 100vh;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+  scrollbar-gutter: stable;
   font-family: cursive;
-  letter-spacing: 1px;
-  font-size: 20px;
-  ;
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent;
+  margin: 16px 0;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 20px;
 }
 
 .modal-content img {
@@ -449,8 +474,8 @@ textarea {
 }
 
 .edit-btn {
-  background: #2f4356;
-  color: white;
+  background: #55a755;
+  color: #ebcf8e;
   border: none;
   padding: 10px 16px;
   border-radius: 7px;
@@ -463,7 +488,7 @@ textarea {
 }
 
 .edit-btn:hover {
-  background: #1f2f3f;
+  background: #339b23;
 }
 
 .modal-content form {
@@ -510,7 +535,7 @@ textarea {
   border: none;
   padding: 11px 15px;
   border-radius: 8px;
-  color: white;
+  color: #ebcf8e;
   cursor: pointer;
   font-weight: 700;
   font-family: cursive;
@@ -525,7 +550,7 @@ textarea {
 }
 
 .edit-actions button:nth-child(3) {
-  background: #2e8b57;
+  background: #55a755;
 }
 
 .edit-actions button:hover {
@@ -540,7 +565,7 @@ textarea {
   height: 34px;
   border: none;
   background: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: #ebcf8e;
   border-radius: 50%;
   cursor: pointer;
   font-weight: bold;
@@ -554,7 +579,7 @@ textarea {
 }
 
 .close-btn:hover {
-  background: #1abc9c;
+  background: #55a755;
   transform: scale(1.05);
 }
 
@@ -575,7 +600,43 @@ textarea {
 .featured-title {
   text-align: center;
   margin: 15px 0 25px;
-  color: #2c3e50;
+  color: #555;
   font-family: cursive;
   font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-content {
+    max-height: calc(100vh - 24px);
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .modal-content img {
+    height: 180px;
+    margin-top: 38px;
+  }
+
+  .edit-actions {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding-top: 12px;
+    padding-bottom: 4px;
+  }
+}
+
+.modal-content h2,
+.modal-content li,
+.modal-content p {
+  color: #555;
+}
+
+.modal-content strong {
+  color: #ff8b00;
+  letter-spacing: 1px;
 }

@@ -195,12 +195,23 @@
     },
     {
       "title": "asdsa",
-      "description": "dsadas",
+      "description": "dsadas дс а дса д  д са д с д са ааааааааааа ааааааа аааааааааа аааааааааа ааааааааа ааааааааааа ааааааа",
       "image": "https://www.schwartz.co.uk/-/media/project/oneweb/schwartz/recipes/recipe_image_update/march_18_2025/easy_pizza_recipe_800x800.webp?rev=217b39d7488a4aa7947174d6e475219f&vd=20250325T174436Z&extension=webp&hash=36F310B7BA2EA4491AADEC213844DF8B",
       "ingredients": [
-        "ewq"
+        "ewq",
+        "ds",
+        "d",
+        "sd",
+        "s",
+        "d",
+        "s",
+        "d",
+        "s",
+        "ds",
+        "d",
+        "s"
       ],
-      "instructions": "ewq",
+      "instructions": "дддддд дддддддд дддддддддддд ддддддддддд дддддддддд дддддддд дддддддд дддддддддддд ддддддддд",
       "cookTime": "56",
       "userId": "mE0PiMgYe1A",
       "id": "i-SFgFwaWtE"
@@ -280,6 +291,12 @@
       "email": "ive9@mail.com",
       "password": "123456",
       "id": "msPBM-kN1Nc"
+    },
+    {
+      "name": "ive10",
+      "email": "ive10@mail.com",
+      "password": "123456",
+      "id": "JkDHG2Wb8lE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

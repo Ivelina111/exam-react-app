@@ -9,7 +9,7 @@ function About() {
 
     return (
         <div className="page about-page">
-            <h1>About Fork Around & Find Out</h1>
+            <h1>About <span>Fork Around & Find Out</span></h1>
 
             <p className="about-intro">
                 Fork Around & Find Out is a recipe space for people who like food,
